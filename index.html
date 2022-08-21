@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <title>Encriptador erick</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">
+                <img src="img/logo.svg" alt="logo" />
+            </h1>
+        </header>
+        <main>
+            <form>
+                <div class="texto">
+                    <textarea
+                        id="texto"
+                        class="area-texto"
+                        placeholder="Ingrese texto aqui"
+                        required
+                    ></textarea>
+                </div>
+                <div class="alerta">
+                    <img src="img/alerta.svg" alt="alerta" />
+                    <span>Solo letras minusculas y sin acentos</span>
+                </div>
+                <div class="botones">
+                    <button
+                        id="btnEncrip"
+                        class="btnEstyle btnEncriptar"
+                        type="button"
+                    >
+                        Encriptar
+                    </button>
+                    <button
+                        id="btnDesEn"
+                        class="btnEstyle btnDesencriptar"
+                        type="button"
+                    >
+                        Decriptar
+                    </button>
+                </div>
+            </form>
+        </main>
+        <aside></aside>
+        <footer>
+            <div class="text-enciptado">
+                <h4>Ningun mensaje fue encontrado</h4>
+                <p id="mos">
+                    Ingresa el texto qu desees encriptar o deseencriptar
+                </p>
+            </div>
+        </footer>
+        <script src="scripts/controlador.js"></script>
+    </body>
+</html>
