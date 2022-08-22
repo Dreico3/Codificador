@@ -47,11 +47,16 @@
         </main>
         <aside></aside>
         <footer>
-            <div class="text-enciptado">
-                <h4>Ningun mensaje fue encontrado</h4>
-                <p id="mos">
-                    Ingresa el texto qu desees encriptar o deseencriptar
-                </p>
+            <textarea
+                id="mos"
+                class="text-enciptado"
+                placeholder="Ningun mensaje fue encontrado"
+                disabled
+            ></textarea>
+            <div class="botones">
+                <button id="copiar" class="btnEstyle btnDesencriptar">
+                    copiar
+                </button>
             </div>
         </footer>
         <script src="scripts/controlador.js"></script>

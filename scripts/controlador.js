@@ -1,7 +1,8 @@
 const texto = document.getElementById("texto");
 const btnEncrip= document.getElementById("btnEncrip");
 const btnDesEn = document.getElementById("btnDesEn");
-const mos = document.getElementById("mos")
+const mos = document.getElementById("mos");
+const btnCopy= document.getElementById("copiar");
 
 //texto.value="perra"
 
@@ -61,9 +62,21 @@ function desEncriptar(){
 }
 function mostrarEn(){
     mos.innerHTML=encriptar();
+    texto.value="";
 }
 function mostrarDes(){
     mos.innerHTML=desEncriptar();
+    texto.value="";
+}
+function copiar(){
+    navigator.clipboard.writeText(mos.value)
+    /* .then(()=>{
+        alert("el texto se copio con exito")
+    })
+    .catch(error=>{
+        console.log(error)
+    }) */
 }
 btnEncrip.onclick = mostrarEn;
 btnDesEn.onclick=mostrarDes;
+btnCopy.onclick=copiar;

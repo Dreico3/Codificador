@@ -55,25 +55,37 @@ body {
     border: 1px solid #0a3871;
     color: #0a3871;
 }
-.text-enciptado{
-    padding-bottom: 20px;
-    margin:30px auto;
-    text-align: center;
-    border: 1px solid black;
-    height: auto;
-    width: 327px;
-    border-radius:30px;
-    -webkit-border-radius:30px;
-    -moz-border-radius:30px;
-    -ms-border-radius:30px;
-    -o-border-radius:30px;
+.btnEncriptar:active {
+    color: white;
+    background-color: #355c8b;
 }
-.text-enciptado h4{
-    padding: 20px 0 10px 0;
-    margin: 0 auto;
-    font-size: 24px;
+.btnDesencriptar:active {
+    border: 1px solid #0a3871;
+    color: #0a3871;
+    background-color:#a0a2a5;
+}
+footer {
+    width: 100%;
+}
+.text-enciptado{
+    display: block;
+    font-family: "Inter", sans-serif;
+    margin:20px auto;
+    min-height:120px;
+    height: auto;
+    width:70%;
+    padding: 20px;
+    text-align:center;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.text-enciptado::placeholder{
+    font-size: 20px;
     color: #343A40;
-    width: 50%;
 }
 
 .text-enciptado p{
