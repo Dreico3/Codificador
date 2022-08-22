@@ -70,12 +70,12 @@ function mostrarDes(){
 }
 function copiar(){
     navigator.clipboard.writeText(mos.value)
-    /* .then(()=>{
+    .then(()=>{
         alert("el texto se copio con exito")
     })
     .catch(error=>{
         console.log(error)
-    }) */
+    })
 }
 btnEncrip.onclick = mostrarEn;
 btnDesEn.onclick=mostrarDes;
