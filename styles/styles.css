@@ -3,6 +3,9 @@ body {
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
 }
+textarea {
+    resize: none;
+}
 
 .logo {
     margin: 24px 0 0 16px;
@@ -62,20 +65,23 @@ body {
 .btnDesencriptar:active {
     border: 1px solid #0a3871;
     color: #0a3871;
-    background-color:#a0a2a5;
+    background-color: #a0a2a5;
 }
 footer {
     width: 100%;
 }
-.text-enciptado{
+.muneco{
+    display: none;
+}
+.text-enciptado {
     display: block;
     font-family: "Inter", sans-serif;
-    margin:20px auto;
-    min-height:120px;
+    margin: 20px auto;
+    min-height: 120px;
     height: auto;
-    width:70%;
+    width: 70%;
     padding: 20px;
-    text-align:center;
+    text-align: center;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -83,14 +89,38 @@ footer {
     -o-border-radius: 30px;
 }
 
-.text-enciptado::placeholder{
+.text-enciptado::placeholder {
     font-size: 20px;
-    color: #343A40;
+    color: #343a40;
 }
 
-.text-enciptado p{
+.text-enciptado p {
     margin: 0 auto;
-    font-size:16px;
-    color:#495057;
+    font-size: 16px;
+    color: #495057;
     width: 60%;
+}
+@media screen and (min-width: 800px) {
+    .muneco{
+        display:initial;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    main {
+        position: relative;
+        display: inline-block;
+        height: 90%;
+        width: 70%;
+    }
+    .area-texto{
+        height:400px;
+    }
+    footer {
+        position: absolute;
+        height: 90%;
+        width: 30%;
+        display: inline-block;
+    }
 }
